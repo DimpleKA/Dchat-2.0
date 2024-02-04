@@ -1,0 +1,103 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f6fa;
+}
+.container,
+.container1,
+.container3 {
+  display: none;
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  text-align: center;
+  color: #665dfe;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #665dfe;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="button"],
+.form-group input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #8094ae;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.form-group input[type="file"] {
+  padding: 10px;
+}
+.form-group input[type="button"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #665dfe;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.form-group input[type="button"]:hover {
+  background-color: #5248dc;
+}
+.form-links {
+  text-align: center;
+  margin-top: 20px;
+}
+.form-links a {
+  color: #665dfe;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.form-links a:hover {
+  text-decoration: underline;
+}
+/* CSS for the overlay */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS for the loader */
+#loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+

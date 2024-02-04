@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="login-registration.css">
+</head>
+<body>
+
+  <!-- registration form starts --> 
+  <!-- sends data to register-user.js --which sends all the data to check_email.php to check whether the email exists in database or not! and sends response back to register-user.js which it chooses to execute register.php  -->
+    <div id="registration" class="container" style="display: block">
+        <h2 id="alertBox" style="background-color: red; color: white; border-radius: 30px; display: none;">
+            Email already Exist! Try loggin In
+        </h2>
+
+        <h2>Registration Form</h2>
+        <form action="" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="register_username" name="register_username" required />
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="register_email" name="register_email" required />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="register_password" name="register_password" required />
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" id="register_confirm_password" name="register_confirm_password" required />
+            </div>
+            <div class="form-group">
+                <label for="image">Profile Picture</label>
+                <input type="file" id="register_image" name="register_image" />
+            </div>
+            <div class="form-group">
+                <input type="button" value="Register" onclick="registerUser()" />
+            </div>
+        </form>
+        <div class="form-links">
+            <a href="#" onclick="showContainer('login')">Already a user? Login here</a>
+            <span>|</span>
+            <a href="#" onclick="showContainer('forgot_password')">Forgot Password?</a>
+        </div>
+    </div>
+<!-- registration form ends -->
+
+
+<!-- login form starts  -->
+ <!-- sends data to login.js --which sends all the data to check_email.php to check whether the email exists in database or not! and sends response back to login.js which it chooses to execute login.php  -->
+    <div id="login" class="container1">
+        <h2>Login Form</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="emaillogin" name="emaillogin" required />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="passwordlogin" name="passwordlogin" required />
+            </div>
+            <div class="form-group">
+                <input type="button" value="Login" onclick="loginUser()" />
+            </div>
+        </form>
+        <div class="form-links">
+            <a href="#" onclick="showContainer('registration')">Back to Registration</a>
+            <span>|</span>
+            <a href="#" onclick="showContainer('forgot_password')">Forgot Password?</a>
+        </div>
+    </div>
+<!-- login form ends -->
+
+<!-- forgot password form starts -->
+    <div id="forgot_password" class="container3">
+        <h2>Forgot Password</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <div id="overlay">
+                    <div id="loader"></div>
+                </div>
+                <label for="email">Email</label>
+                <input type="email" id="emailforgot" name="email" />
+            </div>
+            <div class="form-group" id="otpbox" style="display: none">
+                <label for="email" style="text-align: center">Check College mail and enter the OTP</label>
+                <input type="number" id="otp" name="otp" />
+            </div>
+            <div class="form-group" id="otpbox2" style="display: none">
+                <input type="button" value="Verify OTP" onclick="verifyotp()" />
+            </div>
+            <div class="form-group">
+                <input type="button" value="Reset Password" onclick="forgotPassword()" />
+            </div>
+        </form>
+        <div class="form-links">
+            <a href="#" onclick="showContainer('registration')">Back to Registration</a>
+            <span>|</span>
+            <a href="#" onclick="showContainer('login')">Back to Login</a>
+        </div>
+    </div>
+<!-- forgot password form ends -->
+
+    <script src="forgot-password.js"></script>
+    <script src="register-user.js"></script>
+    <script src="login.js"></script>
+    <script src="remove-000webhost-watermark.js"></script>
+</body>
+</html>

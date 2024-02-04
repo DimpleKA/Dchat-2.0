@@ -1,0 +1,266 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    /* border: 0; */
+  }
+  .main {
+    display: flex;
+  }
+  .leftnav {
+    height: 100vh;
+    width: 80px;
+    background-color: #665dfe;
+  }
+  .centre {
+    height: 100vh;
+    width: 90%;
+    background-color: #fff;
+    display: flex;
+    /* #f8f9fa */
+  }
+  .centreleft {
+    width: 35%;
+    background-color: #fff;
+  }
+  .user {
+    background-color: transparent;
+  }
+  .userbox {
+    background-color: transparent;
+    border: 1px solid #adb5bd; /* Default border color */
+    border-radius: 5px;
+    margin-bottom: 10px; /* Add gap between users */
+    padding: 10px; /* Add padding */
+    transition: border-color 0.3s ease; /* Smooth transition for border color change */
+  }
+  
+  .userbox:hover {
+   background-color: #a7b6c5;
+    border: 3px solid #665dfe; /* Change border color on hover */
+  }
+  
+  .userimg {
+    height: 60px;
+    border-radius: 50px;
+  }
+  .heading {
+    display: flex;
+    justify-content: SPACE-BETWEEN;
+  }
+  p {
+    padding-left: 15px;
+    padding-top: 40px;
+  }
+  #meslogo {
+    height: 50px;
+    border-radius: 50px;
+  }
+  .centre-left-nav-top-icon {
+    display: flex;
+  }
+  .cat-flex {
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  .centreright {
+      border-left: 1px solid #adb5bd;
+      border-right: 1px solid #adb5bd;
+    width: 65%;
+  }
+  .uniquechats{
+    height: 84.7%;
+  }
+  .chatarea{
+      background-color: white;
+      height: 90.5%;
+  }
+  .sendarea{
+      height: 10%;
+  }
+  .userbox {
+    display: flex;
+  }
+  .topdetail {
+    display: flex;
+  }
+  .rightnav {
+    height: 100vh;
+    width: 80px;
+    background-color: #fff;
+  }
+  #search-bar {
+    border-color: #ced4da;
+  }
+  .dp-name-status {
+    display: flex;
+    align-items: center;
+  }
+  #chat-call-friend-nav-heading {
+      PADDING-TOP: 25PX;
+    color: #5a696d;
+  }
+  
+  /* icons */
+  .leftnavbottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items horizontally in the center */
+    justify-content: center; /* Align items vertically in the center */
+    height: 80%; /* Ensure the container takes full height */
+  }
+  
+  /* icons */
+  .material-symbols-outlined {
+    color: #aea9fe; /* Default color */
+    transition: color 0.3s ease; /* Transition effect for color change */
+    margin-bottom: 50px; /* Add some space between icons */
+    
+  }
+  
+  .material-symbols-outlined:not(.no-hover):hover {
+    color: white; /* Color change on hover */
+  }
+  
+  /* Make centreleftbottom scrollable */
+  .centreleftbottom {
+    overflow-y: auto; /* Enable vertical scroll */
+    height: calc(100vh - 150px); /* Set height for scrolling */
+    padding: 10px; /* Add padding */
+    background-color: #f8f9fa;
+  }
+  .centre-top-nav {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    padding: 10px;
+    z-index: 100; /* Ensure it stays above other content */
+  }
+  
+  .centreleftbottom::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar on WebKit browsers (Chrome, Safari, etc.) */
+  }
+  
+  .chatarea {
+      height: 90.5%; /* Adjust the height as needed */
+      overflow-y: auto; /* Enable vertical scrolling */
+      scrollbar-width: thin; /* Set the width of the scrollbar */
+    }
+  
+    
+  
+    
+  
+  
+  
+  
+  .online-offline{
+         color: #2d91db;;
+  }
+  input:focus {
+    outline: none; /* Remove default focus outline */
+  }
+  .message{
+    position: relative;
+  }
+    .message-wrapper {
+      border-radius: 10px;
+      position: absolute;
+      color: #9296bd;
+      background-color: #f5f6fa;
+      width: 50%;
+      margin-left: 20px;
+      padding: 16px 36px; /* This shorthand represents padding-top, padding-right, padding-bottom, padding-left */
+  }
+  .message-wrapper-right{
+      BACKGROUND: #665dfe;
+      border-radius: 10px;
+      position: absolute;
+      right: 0;
+      color: white;
+      width: 50%;
+      margin-right: 20px;
+      padding: 16px 36px;
+  }
+  
+    .messageoptions{
+      padding-top: 40px;
+      position: relative;
+      display: flex;
+    }
+    .messageoptions-right{
+      padding-top: 40px;
+      position: relative;
+      display: flex;
+      justify-content: right;
+    }
+    .send-area-left{
+      display: flex;
+    }
+    .sendarea{
+      display: flex;
+      justify-content: space-between;
+    }
+    .send-area-right{
+      display: flex;
+    }
+    #send-message{
+      height: 50px;
+      border: 0;
+      background: transparent;
+      width: 300px;
+      font-size: larger;
+    }
+    #white-logo-without-blue{
+      color: #aea9fe;
+      transition: color 0.3s ease;
+      margin-bottom: 50px;
+      margin: 0;
+      width: 50px;
+      height: 50px;
+      /* background-color: blue; */
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #emoji-send1{
+      width: 50px; /* Adjust size as needed */
+      height: 50px; /* Adjust size as needed */
+      background-color: blue;
+      border-radius: 50%; /* Make the div circle */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #white-logo{
+  color: white;
+  margin: 0;
+    }
+  
+  .avtar-date{
+      display: flex;
+  }
+  .message-box-date{
+    padding-top: 30px;
+  }
+    #avtaar-dp{
+      height: 40px;
+      border-radius: 50px;
+      border: 5px solid white;
+    }
+    .dropdown{
+      padding-top: 25px;
+      height: 25px;
+    }
+    
+    /* Webkit scrollbar customization */
+    /* Hide scrollbar for Chrome, Safari, and Opera */
+    .chatarea::-webkit-scrollbar {
+      display: none;
+    }
+  

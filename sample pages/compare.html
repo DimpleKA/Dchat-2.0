@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Images</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f6fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #665dfe;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 48%;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        }
+        .button-container {
+            text-align: center;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #665dfe;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .button-container button:last-child {
+            margin-right: 0;
+        }
+        .button-container button:hover {
+            background-color: #5248dc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Compare Images</h2>
+        <div class="image-container">
+            <img src="https://source.boomplaymusic.com/buzzgroup2/M00/38/5F/rBEe_GKzAjGAFaDAAAMScME856s057.jpg" alt="Image 1">
+            <img src="https://media.vanityfair.com/photos/618c0614fdf674f0522a9fb7/master/w_2560%2Cc_limit/LBY_210805_JENNIFER_LAWRENCE_VF_09G_Shot_10_028_QC_sRGB_LR.jpg" alt="Image 2">
+        </div>
+        <div class="button-container">
+            <button onclick="selectImage(1)">Select Image 1</button>
+            <button onclick="selectImage(2)">Select Image 2</button>
+        </div>
+    </div>
+
+    <script>
+        function selectImage(imageNumber) {
+            // Do something based on the selected image
+            alert("You selected Image " + imageNumber);
+        }
+    </script>
+</body>
+</html>
