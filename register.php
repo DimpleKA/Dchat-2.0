@@ -26,7 +26,10 @@ if (isset($_POST['username'], $_POST['email'], $_POST['password'], $_POST['confi
             // Move uploaded file
             if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
                 // Insert user data into database
-                $sql = "INSERT INTO dchatuser (username, email, password, userdp) VALUES ('$username', '$email', '$password', '$target_file')";
+                $sql = "INSERT INTO dchatuser (username, email, password, userdp, status, joined_on, ipaddress, location, otp) 
+                VALUES ('$username', '$email', '$password', '$target_file', '', CURRENT_TIMESTAMP, '', '', '');
+                ";
+                
                 if ($conn->query($sql) === TRUE) {
                     $response = array('success' => true, 'message' => 'User registered successfully');
                 } else {
